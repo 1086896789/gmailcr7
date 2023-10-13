@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario con Carrusel</title>
+    <!-- Agregar enlaces a Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Columna para el formulario (6 columnas en dispositivos medianos o más grandes) -->
+            <div class="col-md-6">
+                <h2>Formulario de Contacto</h2>
+                <form action="enviar_formulario.php" method="post" enctype="multipart/form-data" id="miFormulario">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="form-control" name="nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electronico:</label>
+                        <input type="email" class="form-control" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea class="form-control" name="mensaje" rows="5" required></textarea>
+                    </div>
+
+                    <input type="submit" class="btn btn-primary" value="Enviar">
+                </form>
+            </div>
+
+            <!-- Columna para el carrusel (6 columnas en dispositivos medianos o más grandes) -->
+            <div class="col-md-6">
+                <h2>Carrusel de Imagenes</h2>
+                <!-- Agrega aquí tu código para el carrusel de imágenes -->
+                <!-- Puedes usar el componente Carousel de Bootstrap -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Agregar enlaces a Bootstrap JS y jQuery si es necesario -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+
